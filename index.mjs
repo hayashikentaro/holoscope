@@ -1,7 +1,12 @@
 import React from "react"
-import { createRoot } from "react-dom"
+import ReactDom from "react-dom"
 import { appText } from "./output/Main/index.js"
 
-const container = document.getElementById("purescript-app")
-const root = createRoot(container)
-root.render(<div>{ appText }</div>)
+const App = () => {
+  return (
+    <>
+      <div>{appText}</div>
+    </>
+  )
+}
+ReactDom.render(<App />, document.getElementById("purescript-app"))
