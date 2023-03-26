@@ -11,3 +11,4 @@
 /.idea/
 /.parcel-cache/
 /dist/
+/lib/astro/
